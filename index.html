@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaaising's Lab</title>
+    <style>
+        :root {
+            @media (prefers-color-scheme: light) {
+                --bg-color: #fafafa;
+                --text-color: #3f3f3f;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                --bg-color: #101010;
+                --text-color: #ebebeb;
+            }
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-flow: column nowrap;
+            place-items: center;
+            place-content: center;
+            text-align: center;
+            gap: 1rem 0;
+            padding: 5vh 5vw;
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: system-ui, sans-serif;
+            overflow-wrap: break-word;
+            user-select: none;
+
+            & h1 {
+                font-size: 2.5rem;
+                font-weight: 400;
+            }
+
+            & p {
+                font-size: 1.25rem;
+                font-weight: 300;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gaaising's Lab</h1>
+    <p>这里是Gaaising用于堆放一些无聊的个人作品的地方</p>
+    <p>Blog：<a target="_blank" rel="noopener noreferrer" href="https://blog.tototjc.me/">blog.tototjc.me</a></p>
+</body>
+
+</html>
