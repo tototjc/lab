@@ -44,6 +44,24 @@
             overflow-wrap: break-word;
             user-select: none;
 
+            .avatar {
+                width: 10rem;
+                height: 10rem;
+                border: 0.2rem solid var(--text-color);
+                border-radius: 50%;
+                overflow: hidden;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                    @media (prefers-color-scheme: dark) {
+                        filter: invert(100%);
+                    }
+                }
+            }
+
             & h1 {
                 font-size: 2.5rem;
                 font-weight: 400;
@@ -58,6 +76,9 @@
 </head>
 
 <body>
+    <div class="avatar">
+        <img src="avatar.webp" alt="avatar">
+    </div>
     <h1>Gaaising's Lab</h1>
     <p>这里是Gaaising用于堆放一些无聊的个人作品的地方</p>
     <p>Blog：<a target="_blank" rel="noopener noreferrer" href="https://blog.tototjc.me/">blog.tototjc.me</a></p>
